@@ -24,6 +24,9 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     public void run(HelloWorldConfiguration helloWorldConfiguration, Environment environment) throws Exception {
         final HelloWorldResource helloWorldResource = new HelloWorldResource(helloWorldConfiguration.getTemplate(),
                 helloWorldConfiguration.getDefaultName());
+        final TemplateHealthCheck templateHealthCheck = new TemplateHealthCheck(helloWorldConfiguration.getTemplate());
+
+        environment.healthChecks().register("template", templateHealthCheck);
         environment.jersey().register(helloWorldResource);
     }
 }
