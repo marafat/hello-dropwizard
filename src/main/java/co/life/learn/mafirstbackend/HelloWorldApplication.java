@@ -1,5 +1,7 @@
 package co.life.learn.mafirstbackend;
 
+import co.life.learn.mafirstbackend.health.TemplateHealthCheck;
+import co.life.learn.mafirstbackend.resources.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;

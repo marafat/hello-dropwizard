@@ -1,5 +1,6 @@
-package co.life.learn.mafirstbackend;
+package co.life.learn.mafirstbackend.resources;
 
+import co.life.learn.mafirstbackend.api.Saying;
 import com.codahale.metrics.annotation.Timed;
 import io.dropwizard.jersey.params.NonEmptyStringParam;
 

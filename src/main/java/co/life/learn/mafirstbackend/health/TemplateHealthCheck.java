@@ -1,11 +1,11 @@
-package co.life.learn.mafirstbackend;
+package co.life.learn.mafirstbackend.health;
 
 import com.codahale.metrics.health.HealthCheck;
 
 public class TemplateHealthCheck extends HealthCheck {
     private final String template;
 
-    TemplateHealthCheck(String template) {
+    public TemplateHealthCheck(String template) {
         this.template = template;
     }
 

@@ -1,4 +1,4 @@
-package co.life.learn.mafirstbackend;
+package co.life.learn.mafirstbackend.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;
